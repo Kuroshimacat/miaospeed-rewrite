@@ -36,10 +36,10 @@ func hashMd5(token string) string {
 	return hex.EncodeToString(hasher.Sum(nil))
 }
 
-func SignRequest(token string, req *interfaces.SlaveRequest) string {
+/**func SignRequest(token string, req *interfaces.SlaveRequest) string {
 	awaitSigned := req.Clone()
 	awaitSigned.Challenge = ""
 	awaitSignedStr, _ := jsoniter.MarshalToString(&awaitSigned)
 	awaitSignedStr = strings.TrimSpace(awaitSignedStr)
 	return hashMiaoSpeed(token, awaitSignedStr)
-}
+}**/
